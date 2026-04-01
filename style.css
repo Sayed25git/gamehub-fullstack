@@ -1,0 +1,20 @@
+body{
+background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+color: white;
+font-family: Arial, sans-serif;
+}
+
+.card{
+background: #1c1c1c;
+border-radius: 15px;
+transition: 0.3s;
+height: 100%;
+}
+
+.card:hover{
+transform: translateY(-5px);
+}
+
+.card-body{
+color: white;
+}
