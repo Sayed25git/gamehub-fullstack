@@ -6,7 +6,6 @@ if(isset($_POST['search'])){
 $search = $_POST['search'];
 $like = "%".$search."%";
 
-// 🔥 RESULTS (cards)
 $stmt = $conn->prepare("SELECT * FROM games WHERE name LIKE ? OR genre LIKE ?");
 $stmt->bind_param("ss", $like, $like);
 $stmt->execute();
@@ -35,8 +34,6 @@ View
 </div>
 <?php
 }
-
-// 🔥 SUGGESTIONS (top 5)
 $stmt2 = $conn->prepare("SELECT name FROM games WHERE name LIKE ? LIMIT 5");
 $stmt2->bind_param("s", $like);
 $stmt2->execute();
