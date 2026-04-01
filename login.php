@@ -1,8 +1,6 @@
 <?php
 session_start();
 include "config.php";
-
-// captcha generate
 if(!isset($_SESSION['captcha'])){
     $_SESSION['num1'] = rand(1,10);
     $_SESSION['num2'] = rand(1,10);
