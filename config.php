@@ -1,14 +1,14 @@
 <?php
 
 $host = "localhost";
-$username = "root";
-$password = "";
-$database = "game_db";
+$username = "2435297";
+$password = "deyasmaHian1325@";
+$database = "db2435297";
 
 $conn = new mysqli($host, $username, $password, $database);
 
-if($conn->connect_error){
-    die("Connection failed: " . $conn->connect_error);
+if ($conn->connect_error) {
+    die("Database connection failed: " . $conn->connect_error);
 }
 
 ?>
